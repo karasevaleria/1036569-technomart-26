@@ -7,13 +7,18 @@
 
 <body>
 <header>
-  <a>
-    <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип магазина Техномарт">
-  </a>
+
   <section>
-    <!--Тут будет форма-->
-  </section>
-  <section>
+    <h1 class="visually-hidden">Главное меню страницы</h1>
+    <a>
+      <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип магазина Техномарт">
+    </a>
+    <form action="/search/" method="get">
+      <p>
+        <input type="search" name="main-search-form" placeholder="Поиск:">
+      </p>
+    </form>
+
     <ul>
       <li>
         <a href="#">Закладки</a>
@@ -25,9 +30,8 @@
         <a href="#">Оформить заказ</a>
       </li>
     </ul>
-  </section>
-  <section>
-    <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+
+    <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
     <p>
       <a href="tel:+78125550555">+7(812)555-05-55</a>
       г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
@@ -41,6 +45,7 @@
       </li>
     </ul>
   </section>
+
   <nav>
     <ul>
       <li><a href="index.html">Главная</a></li>
@@ -49,13 +54,14 @@
       <li><a href="#">Новости</a></li>
       <li><a href="#">Спецпредложения</a></li>
       <li><a href="#">Доставка</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
+      <li><a href="#">Контакты</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
   <section>
+    <h2 class="visually-hidden">Промо-блок</h2>
     <ul>
       <li>
         <h3>Материалы</h3>
@@ -87,16 +93,17 @@
   </section>
 
   <section>
+    <h2 class="visually-hidden">Блок-слайдер</h2>
     <ul>
       <li>
         <h3>Дрели</h3>
         <p>соседям на радость</p>
-        <a href="#">Открыть каталог</a>
+        <a href="catalog.html">Открыть каталог</a>
       </li>
       <li>
         <h3>Перфораторы</h3>
         <p>Настоящие мужские игрушки</p>
-        <a href="#">Открыть каталог</a>
+        <a href="catalog.html">Открыть каталог</a>
       </li>
       <a href="#">Вправо</a>
       <a href="#">Влево</a>
@@ -109,11 +116,10 @@
     <h2>Популярные товары:</h2>
     <a href="#">Все популярные товары</a>
     <ul>
-
       <li>
-        <h4>
+        <h3>
           <a href="#">Перфоратор Bosch BFG 9000</a>
-        </h4>
+        </h3>
         <p>
           <img src="img/perforator1.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
         </p>
@@ -126,9 +132,9 @@
       </li>
 
       <li>
-        <h4>
+        <h3>
           <a href="#">Перфоратор Bosch BFG 3000</a>
-        </h4>
+        </h3>
         <p>
           <img src="img/perforator2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
         </p>
@@ -141,9 +147,9 @@
       </li>
 
       <li>
-        <h4>
+        <h3>
           <a href="#">Перфоратор Bosch BFG 6000</a>
-        </h4>
+        </h3>
         <p>
           <img src="img/perforator3.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
         </p>
@@ -156,9 +162,9 @@
       </li>
 
       <li>
-        <h4>
+        <h3>
           <a href="#">Перфоратор Bosch BFG 2000</a>
-        </h4>
+        </h3>
         <p>
           <img src="img/perforator4.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
         </p>
@@ -245,7 +251,7 @@
 
     <ul>
       <li>
-        <h2>Доставка</h2>
+        <h3>Доставка</h3>
         <img src="img/delivery_img.png">
         <p>Мы с удовольствием доставим ваш товар прямо
           к вашему подъезду совершенно бесплатно!
@@ -253,7 +259,7 @@
           поднимая его на ваш этаж!</p>
       </li>
       <li>
-        <h2>Гарантия</h2>
+        <h3>Гарантия</h3>
         <img src="img/guarantee_img.png">
         <p>Если купленный у нас товар поломается или заискрит,
           а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии.
@@ -261,7 +267,7 @@
           Дом уж восстановите как-нибудь сами.</p>
       </li>
       <li>
-        <h2>Кредит</h2>
+        <h3>Кредит</h3>
         <img src="img/credit_img.png">
         <p>Залезть в долговую яму стало проще!
           Кредитные консультанты придут вам на помощь.</p>
@@ -286,7 +292,8 @@
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами, заехав в наш офис:</p>
     <a href="#">
-      <img src="img/map.png" width="300" height="158" alt="Карта">
+      <img src="img/map.png" width="300" height="158" alt="Офис расположен по адресу:
+      г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 ">
     </a>
     <a href="#">Заблудились? Напишите нам!</a>
   </section>
@@ -307,7 +314,7 @@
       <li><a href="#">Новости</a></li>
       <li><a href="catalog.html">Каталог</a></li>
       <li><a href="#">Доставка</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
+      <li><a href="#">Контакты</a></li>
     </ul>
     <ul>
       <li><a href="#">Материалы</a></li>
@@ -329,5 +336,73 @@
     <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
   </p>
 </footer>
+
+<!--Попап Формы входа в личный кабинет-->
+<section>
+  <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label for="user-login">Логин</label>
+      <input id="user-login" type="text" name="login" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="user-password">Пароль</label>
+      <input id="user-password" type="password" name="password" placeholder="********">
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" name="remember">
+        Запомните меня
+      </label>
+      <a href="#">Я забыл пароль!</a>
+    </p>
+    <button type="submit">Войти</button>
+    <button type="button">Закрыть</button>
+  </form>
+</section>
+
+<!--Попап Формы регистрации на сайте-->
+<section>
+  <h2 class="visually-hidden">Форма регистрации на сайте</h2>
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label for="user-login">Введите адрес электронной почты(логин)</label>
+      <input id="user-login" type="text" name="login" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="user-password">Пароль</label>
+      <input id="user-password" type="password" name="password" placeholder="********">
+    </p>
+    <button type="submit">Зарегистрироваться</button>
+    <button type="button">Закрыть</button>
+  </form>
+</section>
+
+<!--Попап формы обратной связи-->
+<section>
+  <h2 class="visually-hidden">Форма обратной связи</h2>
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label for="user-name">Ваше имя:</label>
+      <input id="user-name" type="text" name="username" placeholder="Имя Фамилия">
+    </p>
+    <p>
+      <label for="user-email">Ваш e-mail:</label>
+      <input id="user-email" type="text" name="usermail" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="user-message">Текст письма:</label>
+      <textarea id="user-message" name="message" placeholder="В свободной форме"></textarea>
+    </p>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+
+<!--Попап карты-->
+<section>
+  <h2 class="visually-hidden">Карта</h2>
+  <img src="img/map.png" width="940" height="447" alt="Офис расположен по адресу:
+      г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 ">
+</section>
 </body>
 </html>
