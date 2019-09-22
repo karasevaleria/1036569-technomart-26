@@ -9,14 +9,14 @@
 <header>
 
   <section>
-    <h1 class="visually-hidden">Главное меню страницы</h1>
     <a>
       <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип магазина Техномарт">
     </a>
     <form action="/search/" method="get">
-      <p>
-        <input type="search" name="main-search-form" placeholder="Поиск:">
-      </p>
+      <label for="main-search-form">
+        <img src="#" alt="Иконка поиска">
+      </label>
+      <input type="search" id="main-search-form" name="main-search-form" placeholder="Поиск:">
     </form>
 
     <ul>
@@ -31,7 +31,7 @@
       </li>
     </ul>
 
-    <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+    <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
     <p>
       <a href="tel:+78125550555">+7(812)555-05-55</a>
       г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
@@ -252,7 +252,7 @@
     <ul>
       <li>
         <h3>Доставка</h3>
-        <img src="img/delivery_img.png">
+        <img src="img/delivery_img.png" alt="Икона доставки">
         <p>Мы с удовольствием доставим ваш товар прямо
           к вашему подъезду совершенно бесплатно!
           Ведь мы неплохо заработаем,
@@ -260,7 +260,7 @@
       </li>
       <li>
         <h3>Гарантия</h3>
-        <img src="img/guarantee_img.png">
+        <img src="img/guarantee_img.png" alt="Иконка гарантии">
         <p>Если купленный у нас товар поломается или заискрит,
           а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии.
           Мы обменяем сгоревший товар на новый.
@@ -268,7 +268,7 @@
       </li>
       <li>
         <h3>Кредит</h3>
-        <img src="img/credit_img.png">
+        <img src="img/credit_img.png" alt="Иконка кредит">
         <p>Залезть в долговую яму стало проще!
           Кредитные консультанты придут вам на помощь.</p>
       </li>
@@ -337,47 +337,6 @@
   </p>
 </footer>
 
-<!--Попап Формы входа в личный кабинет-->
-<section>
-  <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
-  <form action="https://echo.htmlacademy.ru" method="post">
-    <p>
-      <label for="user-login">Логин</label>
-      <input id="user-login" type="text" name="login" placeholder="email@example.com">
-    </p>
-    <p>
-      <label for="user-password">Пароль</label>
-      <input id="user-password" type="password" name="password" placeholder="********">
-    </p>
-    <p>
-      <label>
-        <input type="checkbox" name="remember">
-        Запомните меня
-      </label>
-      <a href="#">Я забыл пароль!</a>
-    </p>
-    <button type="submit">Войти</button>
-    <button type="button">Закрыть</button>
-  </form>
-</section>
-
-<!--Попап Формы регистрации на сайте-->
-<section>
-  <h2 class="visually-hidden">Форма регистрации на сайте</h2>
-  <form action="https://echo.htmlacademy.ru" method="post">
-    <p>
-      <label for="user-login">Введите адрес электронной почты(логин)</label>
-      <input id="user-login" type="text" name="login" placeholder="email@example.com">
-    </p>
-    <p>
-      <label for="user-password">Пароль</label>
-      <input id="user-password" type="password" name="password" placeholder="********">
-    </p>
-    <button type="submit">Зарегистрироваться</button>
-    <button type="button">Закрыть</button>
-  </form>
-</section>
-
 <!--Попап формы обратной связи-->
 <section>
   <h2 class="visually-hidden">Форма обратной связи</h2>
@@ -388,7 +347,7 @@
     </p>
     <p>
       <label for="user-email">Ваш e-mail:</label>
-      <input id="user-email" type="text" name="usermail" placeholder="email@example.com">
+      <input id="user-email" type="email" name="usermail" placeholder="email@example.com">
     </p>
     <p>
       <label for="user-message">Текст письма:</label>

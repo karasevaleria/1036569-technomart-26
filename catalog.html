@@ -8,7 +8,6 @@
 <body>
 <header>
   <section>
-    <h1 class="visually-hidden">Главное меню страницы</h1>
     <a href="index.html">
       <img src="img/logo-technomart.svg" width="111" height="24" alt="Логотип магазина Техномарт">
     </a>
@@ -30,7 +29,7 @@
       </li>
     </ul>
 
-    <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+    <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
     <p>
       <a href="tel:+78125550555">+7(812)555-05-55</a>
       г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
@@ -86,9 +85,16 @@
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>Цена:</legend>
-        <input type="range" min="0" max="30000" name="price">
-        <button type="button">0</button>
-        <button type="button">30000</button>
+        <div>
+          <span></span>
+        </div>
+        <button type="button"></button>
+        <button type="button"></button>
+        <label for="filter-range-number-1">0</label>
+        <input type="text" id="filter-range-number-1" name="0">
+        <label for="filter-range-number-2">30000</label>
+        <input type="text" id="filter-range-number-2" name="30000">
+
       </fieldset>
       <fieldset>
         <legend>Производители:</legend>
@@ -119,11 +125,11 @@
         <legend>Питание:</legend>
         <ul>
           <li>
-            <input type="radio" name="rechargeable" id="filter-rechargeable" checked>
+            <input type="radio" name="radio-button" id="filter-rechargeable" checked>
             <label for="filter-rechargeable">Аккумуляторные</label>
           </li>
           <li>
-            <input type="radio" name="network" id="filter-network">
+            <input type="radio" name="radio-button" id="filter-network">
             <label for="filter-network">Сетевые</label>
           </li>
         </ul>
@@ -134,11 +140,25 @@
 
   <section>
     <h3>Сортировка:</h3>
-    <a href="#">по цене</a>
-    <a href="#">по типу</a>
-    <a href="#">по функционалу</a>
-    <a href="#">кнопка вверх</a>
-    <a href="#">кнопка вниз</a>
+    <ul>
+      <li>
+        <a href="#">по цене</a>
+      </li>
+      <li>
+        <a href="#">по типу</a>
+      </li>
+      <li>
+        <a href="#">по функционалу</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="#">кнопка вверх</a>
+      </li>
+      <li>
+        <a href="#">кнопка вниз</a>
+      </li>
+    </ul>
   </section>
 
   <section>
