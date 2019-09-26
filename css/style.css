@@ -2,19 +2,21 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Cuprum", "PT Sans", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400px;
   color: #000000;
-
   background-color: #ffffff;
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 a {
   text-decoration: none;
+}
+
+.button {
+  text-decoration: none;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .visually-hidden {
@@ -34,7 +36,7 @@ a {
   background-color: #f3f7f9;
 }
 
-.main-logo {
+.button-main-logo {
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 }
@@ -45,69 +47,58 @@ a {
 
 .form-search {
   color: #ffffff;
-  font-family: Cuprum;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
 }
 
-.top-menu.list {
-  color: #ffffff;
-  font-family: Cuprum;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 18px;
-
+.top-menu-list {
   list-style: none;
 }
 
-.top-menu.list a {
+.top-menu-list .button {
   color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
 }
 
-.button-order {
+.button-green {
   background-color: #63a63e;
 }
 
-h1 {
+.main-headline {
   color: #ee3643;
-  font-family: Cuprum;
   font-size: 16px;
+  font-weight: 400;
   font-style: italic;
   line-height: 23px;
 }
 
-.button-number {
+.button-with-border {
   border: 3px solid #ffffff;
-
   color: #ee3643;
-  font-family: Cuprum;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
 }
 
 .address {
-  font-family: Cuprum;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
 
 .login-menu {
-
   list-style: none;
-  background-color: #ffffff;
+}
 
+.button-white {
+  background-color: #ffffff;
   color: #000000;
-  font-family: Cuprum;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
-}
-
-.login-menu a {
-  color: #000000;
 }
 
 .nav {
@@ -118,7 +109,6 @@ h1 {
 .nav-list {
   list-style: none;
   color: #ffffff;
-  font-family: Cuprum;
   font-size: 17px;
   font-weight: 400;
   line-height: 17px;
@@ -129,34 +119,30 @@ h1 {
 }
 
 /*Стили основного содержимого*/
-.about-company h2 {
-  font-family: Cuprum;
+.about-company-headline {
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.about-company p {
-  font-family: "PT Sans";
+.about-company-info {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   line-height: 24px;
-
 }
 
-.about-company ul {
+.about-company-list {
   list-style: none;
 
-  font-family: Cuprum;
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
 }
 
-.about-company a {
+.button-red {
   background-color: #ee3643;
   color: #ffffff;
-  font-family: Cuprum;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -173,37 +159,31 @@ h1 {
   background-color: #32425c;
 }
 
-.footer-logo {
+.button-footer-logo {
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 }
 
-.footer-contacts,
-.footer-contacts a {
+.footer-contacts {
   color: #f3f7f9;
-  font-family: Cuprum;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.footer-nav ul {
+.footer-nav-list {
   list-style: none;
 
-}
-
-.footer-nav a {
-  font-family: Cuprum;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.footer-nav-first a {
+.footer-nav-list-first {
   color: #f1f5f7;
 }
 
-.footer-nav-second a {
+.footer-nav-list-second {
   color: #ffd180;
 }
 
@@ -213,7 +193,6 @@ h1 {
 
 .copyright {
   color: #ffffff;
-  font-family: Cuprum;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -223,20 +202,18 @@ h1 {
   list-style: none;
 }
 
-.socials a {
+.socials-item {
   background-color: #212a3a;
-  background-color: #ffffff;
 }
 
 .links {
   color: #ffffff;
-  font-family: Cuprum;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
 }
 
-.links a {
+.links-to {
   color: #ffd180;
 }
 
@@ -250,30 +227,30 @@ h1 {
 
 /*Стили страницы каталога*/
 
-.button-basket {
+.button-transparent-full {
   background-color: #ee3643;
 }
 
-.user-menu li {
+.user-menu {
   list-style: none;
 }
 
-.user-menu a {
+.user-menu.orders,
+.user-menu.account {
   color: #32425c;
-  font-family: Cuprum;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-decoration: underline;
 }
 
-.breadcrumbs li {
+.breadcrumbs {
   list-style: none;
 }
 
-.breadcrumbs a {
+.breadcrumbs.item {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -282,19 +259,18 @@ h1 {
 
 .inner-page-title {
   background-color: #f2f6f8;
-
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.catalog li {
+.catalog {
   list-style: none;
 }
 
-.catalog-item a {
+.catalog-item {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -302,7 +278,7 @@ h1 {
 
 .old-price {
   color: #999999;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -312,9 +288,8 @@ h1 {
 
 .new-price {
   background-color: #ee3643;
-
   color: #ffffff;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -323,33 +298,28 @@ h1 {
 
 legend {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.filter li {
+.filter {
   list-style: none;
+}
 
+.filter-item {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
 }
 
-.button-show {
+.button-with-gray-border {
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
-
-  color: #000000;
-  font-family: "PT Sans";
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 18px;
 }
-
 
