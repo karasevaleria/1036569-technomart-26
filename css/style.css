@@ -80,8 +80,48 @@ a {
   background-color: #ffffff;
 }
 
+.button-translucent-gray {
+  background-color: #000000;
+  opacity: 0.1;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.button-green-with-shadow {
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #63a63e;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.button-transparent-with-green-border {
+  border: solid 3px #63a63e;
+  font-size: 14px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.button-white-big {
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+  background-color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  color: #32425c;
+}
+
+.button-blue-big {
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  background-color: #32425c;
+  font-size: 21px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
 /*Стили главной страницы*/
 /*Стили шапки*/
+
 .header {
   background-color: #f3f7f9;
 }
@@ -145,6 +185,121 @@ a {
 
 /*Стили основного содержимого*/
 
+.promo-list {
+  list-style: none;
+}
+
+.promo-item:first-child {
+  background-color: #ffbf47;
+}
+
+.promo-item:nth-child(2) {
+  background-color: #3bbce3;
+}
+
+.promo-item:nth-child(3) {
+  background-color: #dc91d8;
+}
+
+.promo-item:nth-child(4) {
+  background-color: #8ed78f;
+}
+
+.promo-item:last-child {
+  background-color: #ffc047;
+}
+
+.promo-item-headline {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.slider-list {
+  list-style: none;
+}
+
+.slider-item:first-child {
+  width: 620px;
+  height: 266px;
+  background: url("../img/slider1.jpg") no-repeat;
+}
+
+.slider-item:nth-child(2) {
+  width: 620px;
+  height: 266px;
+  background: url("../img/slider2.jpg") no-repeat;
+}
+
+.slider-item-headline {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.slider-item-text {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #ffffff;
+}
+
+.popular-headline {
+  background-color: #f9f5f0;
+  font-size: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.popular-list {
+  list-style: none;
+}
+
+.popular-item,
+.catalog-item {
+  border: solid 1px #eaeaea;
+  background-color: #ffffff;
+}
+
+.popular-item-name {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.service {
+  background-color: #f4f7f9;
+}
+
+.service-headline {
+  font-size: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.service-info {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  color: #000000;
+}
+
+.service-list {
+  list-style: none;
+}
+
+.service-info-list {
+  list-style: none;
+}
+
+.service-info-list-headline {
+  font-size: 36px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
 .about-company-headline {
   font-size: 30px;
   font-weight: 400;
@@ -160,7 +315,6 @@ a {
 
 .about-company-list {
   list-style: none;
-
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
@@ -185,7 +339,6 @@ a {
 
 .footer-nav-list {
   list-style: none;
-
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -276,7 +429,7 @@ a {
   list-style: none;
 }
 
-.catalog-item {
+.catalog-item-name {
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -313,7 +466,7 @@ legend {
   text-transform: uppercase;
 }
 
-.filter {
+.filter-list {
   list-style: none;
 }
 
@@ -326,4 +479,60 @@ legend {
   text-transform: uppercase;
 }
 
+.sorting-list {
+  list-style: none;
+}
 
+.filter-headline,
+.sorting-headline,
+.sorting-list {
+  background-color: #f7f3ec;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.price-slider,
+.price-slider-number {
+  background-color: #f7f3ec;
+}
+
+.sorting-item {
+  opacity: 0.3;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-item-first {
+  opacity: unset;
+  color: #ee3643;
+}
+
+.catalog-breadcrumb {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-item-info {
+  background-color: #f4f7f9;
+}
+
+.catalog-item-info-headline {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-item-info-text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  color: #000000;
+}
