@@ -211,7 +211,7 @@ a {
   color: rgba(50, 66, 92, 0.3);
 }
 
-.button-white-big {
+.button-blue-big {
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
   background-color: #32425c;
   font-size: 21px;
@@ -219,12 +219,13 @@ a {
   color: #ffffff;
 }
 
-.button-white-big:hover {
+.button-blue-big:hover {
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
   background-color: #293449;
 }
 
-.button-white-big:active {
+.button-blue-big:active,
+.button-blue-big.active {
   box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
   background-color: #ffffff;
   color: #32425c;
@@ -546,15 +547,15 @@ a {
   line-height: 18px;
 }
 
-.links-to {
+.link {
   color: #ffd180;
 }
 
-.links-to:hover {
+.link:hover {
   text-decoration: underline;
 }
 
-.links-to:active {
+.link:active {
   color: #ee3643;
 }
 
