@@ -11,69 +11,77 @@
 
 <body>
 <header class="header">
+  <div class="top-menu-wrapper">
+    <div class="top-menu">
+      <a class="button button-main-logo">
+        <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип магазина Техномарт">
+      </a>
+      <form class="form-search" action="/search/" method="get">
+        <label for="main-search-form">
+          <img src="#" alt="Иконка поиска">
+        </label>
+        <input type="search" id="main-search-form" name="main-search-form" placeholder="Поиск:">
+      </form>
 
-  <div class="top-menu">
-    <a class="button button-main-logo">
-      <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип магазина Техномарт">
-    </a>
-    <form class="form-search" action="/search/" method="get">
-      <label for="main-search-form">
-        <img src="#" alt="Иконка поиска">
-      </label>
-      <input type="search" id="main-search-form" name="main-search-form" placeholder="Поиск:">
-    </form>
-
-    <ul class="top-menu-list">
-      <li>
-        <a class="button button-transparent" href="#">Закладки</a>
-      </li>
-      <li>
-        <a class="button button-transparent" href="#">Корзина</a>
-      </li>
-      <li>
-        <a class="button button-green" href="#">Оформить заказ</a>
-      </li>
-    </ul>
+      <ul class="top-menu-list">
+        <li>
+          <a class="button button-transparent" href="#">Закладки</a>
+        </li>
+        <li>
+          <a class="button button-transparent" href="#">Корзина</a>
+        </li>
+        <li>
+          <a class="button button-green" href="#">Оформить заказ</a>
+        </li>
+      </ul>
+    </div>
   </div>
-
-  <h1 class="main-headline">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-
-  <a class="button button-with-border" href="tel:+78125550555">+7(812)555-05-55</a>
-  <p class="address">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
-  <ul class="login-menu">
-    <li>
-      <a class="button button-white" href="#">Войти</a>
-    </li>
-    <li>
-      <a class="button button-white" href="#">Регистрация</a>
-    </li>
-  </ul>
-
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-list-item">
-        <a class="nav-list-link" href="index.html">Главная</a>
-      </li>
-      <li class="nav-list-item">
-        <a class="nav-list-link" href="#">Компания</a>
-      </li>
-      <li class="nav-list-item">
-        <a class="nav-list-link" href="catalog.html">Каталог</a>
-      </li>
-      <li class="nav-list-item">
-        <a class="nav-list-link" href="#">Новости</a>
-      </li>
-      <li class="nav-list-item">
-        <a class="nav-list-link" href="#">Спецпредложения</a>
-      </li>
-      <li class="nav-list-item">
-        <a class="nav-list-link" href="#">Доставка</a>
-      </li>
-      <li class="nav-list-item">
-        <a class="nav-list-link" href="#">Контакты</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="center-menu-wrapper">
+    <div class="center-menu">
+      <div class="main-headline-wrapper">
+        <h1 class="main-headline">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      </div>
+      <div class="main-contacts-wrapper">
+        <a class="button button-with-border" href="tel:+78125550555">+7(812)555-05-55</a>
+        <p class="address">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+      </div>
+      <ul class="login-menu">
+        <li>
+          <a class="button button-white" href="#">Войти</a>
+        </li>
+        <li>
+          <a class="button button-white" href="#">Регистрация</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="nav-wrapper">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="index.html">Главная</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="#">Компания</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="#">Новости</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="#">Спецпредложения</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="#">Доставка</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main>
@@ -385,14 +393,14 @@
       </li>
     </ul>
     <ul class="links">
-      <li class="link">
+      <li>
         <p>Обратная связь:
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
       </li>
-      <li class="link">
+      <li>
         <p>Разработано -
-          <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </li>
     </ul>
