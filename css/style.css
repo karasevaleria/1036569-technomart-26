@@ -420,8 +420,30 @@ a {
 
 /*Стили основного содержимого*/
 
+.promo-wrapper {
+}
+
+.promo {
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
 .promo-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.promo-item {
+  width: 300px;
+  height: 123px;
 }
 
 .promo-item:first-child {
@@ -436,7 +458,7 @@ a {
   background-color: #dc91d8;
 }
 
-.promo-item:nth-child(4) {
+.promo-item:nth-child(5) {
   background-color: #8ed78f;
 }
 
@@ -519,6 +541,7 @@ a {
 }
 
 .pagination-list {
+  display: flex;
   list-style: none;
 }
 
@@ -814,14 +837,21 @@ a {
 .catalog {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .catalog-item {
-  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
   width: 220px;
   height: 318px;
+}
+
+.catalog-item-info {
+  display: inline-block;
+  padding: 30px 40px;
 }
 
 .catalog-item-name {
@@ -863,6 +893,7 @@ legend {
 
 .filter-sorting-menu {
   display: flex;
+  justify-content: space-between;
   width: 940px;
 }
 
@@ -891,6 +922,8 @@ legend {
 
 .sorting-list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .sorting-item {
