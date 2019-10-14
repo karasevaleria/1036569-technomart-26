@@ -846,7 +846,6 @@ a {
   flex-direction: column;
   margin-bottom: 20px;
   width: 220px;
-  height: 318px;
 }
 
 .catalog-item-info {
@@ -892,9 +891,7 @@ legend {
 }
 
 .filter-sorting-menu {
-  display: flex;
-  justify-content: space-between;
-  width: 940px;
+
 }
 
 .filter-menu-wrapper {
@@ -918,6 +915,8 @@ legend {
 
 .sorting-list-wrapper {
   display: flex;
+  justify-content: flex-end;
+  width: 940px;
 }
 
 .sorting-list {
