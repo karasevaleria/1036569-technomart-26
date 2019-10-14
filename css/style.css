@@ -543,6 +543,8 @@ a {
 .pagination-list {
   display: flex;
   list-style: none;
+  margin: 0 0 0 20px;
+  padding: 0;
 }
 
 .service {
@@ -783,7 +785,12 @@ a {
 }
 
 .breadcrumbs-wrapper {
-
+  width: 940px;
+  min-height: 89px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .breadcrumbs {
@@ -811,12 +818,6 @@ a {
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
-  width: 940px;
-  min-height: 89px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 10px;
-  padding-left: 10px;
 }
 
 .main-block-wrapper {
@@ -827,18 +828,17 @@ a {
   padding-left: 10px;
 }
 
-.filter-catalog-wrapper {
-  display: flex;
-}
-
 .catalog-wrapper {
+  max-width: calc(100% - 220px);
 }
 
 .catalog {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-item {
@@ -846,11 +846,19 @@ a {
   flex-direction: column;
   margin-bottom: 20px;
   width: 220px;
+  margin-left: 20px;
+  box-sizing: border-box;
 }
 
 .catalog-item-info {
-  display: inline-block;
-  padding: 30px 40px;
+  display: block;
+  padding: 30px 0;
+}
+
+.catalog-item-info-wrapper {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
 }
 
 .catalog-item-name {
@@ -889,15 +897,18 @@ legend {
   line-height: 30px;
   text-transform: uppercase;
 }
-
-.filter-sorting-menu {
-
+.filter-wrapper {
+display: flex;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
 }
 
 .filter-menu-wrapper {
   display: flex;
   flex-direction: column;
   width: 220px;
+  flex: none;
 }
 
 .filter-list {
@@ -915,14 +926,16 @@ legend {
 
 .sorting-list-wrapper {
   display: flex;
-  justify-content: flex-end;
-  width: 940px;
+  justify-content: flex-start;
+  background: #f7f3ec;
+  margin-left: 20px;
 }
 
 .sorting-list {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  margin-left: auto;
 }
 
 .sorting-item {
@@ -940,12 +953,15 @@ legend {
 .filter-headline,
 .sorting-headline,
 .sorting-list {
-  background-color: #f7f3ec;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: normal;
   color: #000000;
   text-transform: uppercase;
+}
+
+.filter-headline-wrapper {
+  background: #f7f3ec;
 }
 
 .price-slider,
