@@ -420,48 +420,55 @@ a {
 
 /*Стили основного содержимого*/
 
-.promo-wrapper {
-  width: 940px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
 .promo {
+  display: flex;
   width: 940px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
 .promo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  flex-direction: row;
+}
+
+.promo-wrapper-1 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+}
+
+.promo-wrapper-2 {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .promo-item {
   width: 300px;
-  height: 123px;
+  margin: 5px;
+  padding: 0;
 }
 
-.promo-item:first-child {
+.promo-list .promo-item:first-child {
   background-color: #ffbf47;
 }
 
-.promo-item:nth-child(2) {
+.promo-list .promo-item:nth-child(2) {
   background-color: #3bbce3;
 }
 
-.promo-item:nth-child(3) {
+.promo-item:nth-child(1) {
   background-color: #dc91d8;
 }
 
-.promo-item:nth-child(5) {
+.promo-item:nth-child(2) {
   background-color: #8ed78f;
 }
 
@@ -478,6 +485,8 @@ a {
 
 .slider-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .slider-item {
@@ -509,6 +518,20 @@ a {
 
 .popular-wrapper {
   display: flex;
+  flex-direction: column;
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+
+.popular-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
   background-color: #f9f5f0;
 }
 
@@ -516,52 +539,55 @@ a {
   font-size: 30px;
   color: #32425c;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
-.popular-list-wrapper {
-}
 
 .popular-list {
   list-style: none;
   display: flex;
   justify-content: flex-start;
-  flex-wrap: nowrap;
-  margin: 0;
+  flex-wrap: wrap;
+  margin: 0 0 0 -20px;
   padding: 0;
 }
 
-.popular-list-2 {
+.client-list {
   list-style: none;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 0 0 -20px;
   padding: 0;
-}
-
-.popular-item {
-  border: solid 1px #e5e5e5;
-  background-color: #ffffff;
-  width: 220px;
-  margin: 5px;
-}
-
-.popular-item:hover {
-  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
-  background-color: #ffffff;
-}
-
-.popular-item:active {
-  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
-  background-color: #ffffff;
 }
 
 .catalog-item {
   border: solid 1px #eaeaea;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 220px;
+  margin-left: 20px;
+  box-sizing: border-box;
 }
 
 .catalog-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  background-color: #ffffff;
+}
+
+.client-card {
+  border: solid 1px #eaeaea;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  min-width: 220px;
+  margin-left: 20px;
+  box-sizing: border-box;
+}
+
+.client-card:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
   background-color: #ffffff;
 }
@@ -602,25 +628,37 @@ a {
   color: #000000;
 }
 
-.service-info-item {
-  display: flex;
-}
-
 .service-list {
+  display: block;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 240px;
 }
 
 .service-list-wrapper {
   display: flex;
 }
 
-.service-info-list-wrapper {
-  width: 275px;
+.service-info-item-wrapper {
+  width: 468px;
 }
 
 .service-info-list {
   list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 275px;
 }
+
+.service-info-item {
+  display: none;
+}
+
+.service-info-item.active {
+  display: block;
+}
+
 
 .service-info-list-headline {
   font-size: 36px;
@@ -659,6 +697,8 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 /*Стили подвала*/
@@ -706,6 +746,7 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
+
 }
 
 .footer-nav-list-link {
@@ -892,14 +933,7 @@ a {
   padding: 0;
 }
 
-.catalog-item {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  width: 220px;
-  margin-left: 20px;
-  box-sizing: border-box;
-}
+
 
 .catalog-item-info {
   display: block;
